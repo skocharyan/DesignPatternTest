@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4727200f-9bfa-4e7a-b9f0-b5977a2f9f86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lenovo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Properties/MyProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Properties/MyProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/factories/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/factories/WebDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/factories/child" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/options/CustomChromeOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/options/CustomChromeOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/options/CustomFirefoxOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/options/CustomFirefoxOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/Pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Properties/MyProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Properties/MyProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/factories/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/factories/WebDriverFactory.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1djXcuTJUdU6uVrOyK25ED3TvZk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -49,6 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Educational projects/Log4JTest" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -87,6 +91,7 @@
       <workItem from="1593369199543" duration="1331000" />
       <workItem from="1593456096360" duration="2591000" />
       <workItem from="1593515993058" duration="3150000" />
+      <workItem from="1593546382280" duration="328000" />
     </task>
     <servers />
   </component>
@@ -106,30 +111,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1593282891569" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1593545409543">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593545409543" />
     <state x="505" y="280" key="Github.CreateGistDialog" timestamp="1593460959802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="505" y="280" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1593460959802" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1593519165643">
+    <state width="1323" height="103" key="GridCell.Tab.0.bottom" timestamp="1593546712485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593519165643" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1593519165643">
+    <state width="1323" height="103" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593546712485" />
+    <state width="1323" height="103" key="GridCell.Tab.0.center" timestamp="1593546712485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593519165643" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1593519165643">
+    <state width="1323" height="103" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593546712485" />
+    <state width="1323" height="103" key="GridCell.Tab.0.left" timestamp="1593546712485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593519165643" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1593519165643">
+    <state width="1323" height="103" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593546712485" />
+    <state width="1323" height="103" key="GridCell.Tab.0.right" timestamp="1593546712485">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593519165643" />
-    <state x="378" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1593515993118">
+    <state width="1323" height="103" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593546712485" />
+    <state x="378" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1593546390132">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="225" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593515993118" />
+    <state x="378" y="225" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593546390132" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1593516835408">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

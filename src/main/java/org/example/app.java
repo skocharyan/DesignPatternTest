@@ -1,5 +1,7 @@
 package org.example;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.example.Pages.HomePage;
 import org.example.Properties.MyProperties;
 import org.example.factories.WebDriverFactory;
@@ -33,5 +35,10 @@ public class app {
 //        driver.findElement(By.xpath("//input[@class='cba3 cba4 cba2']")).sendKeys("SKA30585850");
 //        driver.findElement(By.xpath("//input[@class='cba3 cba4 cba2'][1]")).sendKeys("SKA30585850");
           HomePage.start("chrome");
+          Logger logger =  LogManager.getLogger(app.class);
+          logger.debug("ddddddddddddddd");
+          logger.error("sssssssssssssss");
+
+
     }
 }

@@ -22,7 +22,7 @@ public class WebDriverFactory {
         return new WebDriverFactory(browserName);
     }
 
-    public WebDriverFactory generateWebDriver() {
+    public WebDriverFactory generateWebDriver()  {
         setSystemProperties();
         WebDriver driver = null;
         switch (browserName) {
@@ -42,7 +42,7 @@ public class WebDriverFactory {
 
     }
 
-    private static void setSystemProperties() {
+    private static void setSystemProperties(){
         if (System.getProperty("webdriver.chrome.driver") == null) {
             String path = MyProperties.start().getProperties("chromeDriver");
             System.setProperty("webdriver.chrome.driver", path);

@@ -6,7 +6,6 @@ public class CustomChromeOptions {
 
     public ChromeOptions getOptions(){
         ChromeOptions chromeOptions  = new ChromeOptions();
-
         return chromeOptions;
     }
 }
