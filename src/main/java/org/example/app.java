@@ -4,6 +4,7 @@ import org.example.Pages.HomePage;
 import org.example.Properties.MyProperties;
 import org.example.factories.WebDriverFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,11 +19,11 @@ public class app {
     public static void main(String[] args) {
 //        String path = MyProperties.start().getProperties("chromeDriver");
 //        System.setProperty("webdriver.chrome.driver", path);
-//        ChromeOptions options = new ChromeOptions();
+//        MutableCapabilities options = new ChromeOptions();
 //        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 //        options.setExperimentalOption("useAutomationExtension", false);
 //        options.addArguments("--disable-blink-features");
-//        options.addArguments("--disable-blink-features=AutomationControlled");
+//        ((ChromeOptions) options).addArguments("--disable-blink-features=AutomationControlled");
 //        options.addArguments("--disable-extensions");
 //        options.addArguments("--profile-directory=Default");
 //        options.addArguments("--disable-plugins-discovery");

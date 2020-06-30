@@ -13,14 +13,15 @@ public class HomePage  extends  BasePage{
     @FindBy(xpath = "")
     private WebElement SignInButton;
 
-    public HomePage(WebDriver webDriver){
+    private HomePage(EventFiringWebDriver webDriver){
         super(webDriver);
 
     }
     public static HomePage start(String browserName){
-        WebDriver webDriver  = WebDriverFactory.generateWebDriver(browserName);
-        webDriver.get("https://www.youtube.com/watch?v=qFdP0XlAVaE&list=RDvOzxxyL9C2M&index=15");
-        return new HomePage(webDriver);
+        EventFiringWebDriver eventFiringWebDriver =
+                WebDriverFactory.start("chrome").generateWebDriver().getDriver();
+        eventFiringWebDriver.get("https://www.youtube.com/watch?v=qFdP0XlAVaE&list=RDvOzxxyL9C2M&index=15");
+        return new HomePage(eventFiringWebDriver);
     }
 
 }

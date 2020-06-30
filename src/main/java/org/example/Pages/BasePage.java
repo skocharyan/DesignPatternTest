@@ -14,10 +14,10 @@ public class BasePage {
     private static final int TIMEOUT = 5;
     private static final int POLLING = 100;
 
-    protected WebDriver driver;
+    protected EventFiringWebDriver driver;
     private WebDriverWait wait;
 
-    public BasePage(WebDriver driver) {
+    public BasePage(EventFiringWebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, TIMEOUT, POLLING);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, TIMEOUT), this);
