@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4727200f-9bfa-4e7a-b9f0-b5977a2f9f86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/aa.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/sdfsf.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myexample.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logs/myexample.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logs/prints.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/logs/prints.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/URL.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/URL.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/D_Facade_pattern_test.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/app.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/app.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +90,7 @@
       <workItem from="1593548203453" duration="433000" />
       <workItem from="1593550164087" duration="241000" />
       <workItem from="1593595538329" duration="3431000" />
-      <workItem from="1593600532166" duration="2210000" />
+      <workItem from="1593600532166" duration="5602000" />
     </task>
     <servers />
   </component>
@@ -136,6 +122,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593598835339" />
+    <state x="110" y="100" width="1146" height="535" key="DiffContextDialog" timestamp="1593604920211">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="110" y="100" width="1146" height="535" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1593604920211" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1593545409543">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -168,9 +158,20 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="378" y="225" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593600531951" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1593548276940">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1593605182335">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593548276940" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593605182335" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Pages/LoginPage.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

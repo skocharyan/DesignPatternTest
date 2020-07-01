@@ -14,7 +14,8 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//div[@class='inventory_item']")
     private List<WebElement> productCollection;
-
+    @FindBy(xpath = "//a[@class='shopping_cart_link fa-layers fa-fw']")
+    private WebElement chart;
 
     private HomePage(EventFiringWebDriver webDriver) {
         super(webDriver);
@@ -29,5 +30,6 @@ public class HomePage extends BasePage {
         eventFiringWebDriver = WebDriverFactory.start(browserName).generateWebDriver().getDriver();
         return new HomePage(eventFiringWebDriver);
     }
+
 
 }
