@@ -1,21 +1,7 @@
 package org.example;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.example.Pages.HomePage;
-import org.example.Properties.MyProperties;
-import org.example.factories.WebDriverFactory;
-import org.openqa.selenium.By;
-import org.openqa.selenium.MutableCapabilities;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import org.example.Pages.LoginPage;
+import org.openqa.selenium.WebElement;
 
 public class app {
     public static void main(String[] args) {
@@ -34,11 +20,6 @@ public class app {
 ////
 //        driver.findElement(By.xpath("//input[@class='cba3 cba4 cba2']")).sendKeys("SKA30585850");
 //        driver.findElement(By.xpath("//input[@class='cba3 cba4 cba2'][1]")).sendKeys("SKA30585850");
-          HomePage.start("chrome");
-          Logger logger =  LogManager.getLogger(app.class);
-          logger.debug("ddddddddddddddd");
-          logger.error("sssssssssssssss");
-
 
     }
 }

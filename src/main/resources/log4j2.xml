@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="DEBUG">
-<!--    <Properties>-->
-<!--        <Property name="log-path">C:/logs/</Property>-->
-<!--    </Properties>-->
+<Configuration status="WARN">
+    <Properties>
+        <Property name="basePath">./src/logs</Property>
+    </Properties>
+
     <Appenders>
-        <RollingFile name="RollingFile" fileName="myexample.log"
-                     filePattern="myexample-%d{yyyy-MM-dd}-%i.log" >
-            <PatternLayout>
-                <pattern>%d{dd/MMM/yyyy HH:mm:ss,SSS}- %c{1}: %m%n</pattern>
-            </PatternLayout>
-            <Policies>
-                <SizeBasedTriggeringPolicy size="1 KB" />
-            </Policies>
-            <DefaultRolloverStrategy max="4"/>
+        <RollingFile name="File"  fileName = "${basePath}/prints.log" filePattern="${basePath}/prints-%d{yyyy-MM-dd}.txt">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5000"/>
         </RollingFile>
+        <Console name="Console" >
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
     </Appenders>
     <Loggers>
-        <Logger name="root" level="debug" additivity="true">
-            <appender-ref ref="RollingFile" level="debug"/>
-        </Logger>
-        <Root level="debug" additivity="true">
-            <AppenderRef ref="RollingFile"/>
-        </Root>
+                <Logger  name="org.example.Properties.MyProperties"  level="error"  additivity ="false" >
+                    <AppenderRef ref="Console"/>
+                </Logger>
+<!--        <Root level="trace" additivity = "true">-->
+<!--            <AppenderRef ref="File"/>-->
+<!--            <AppenderRef ref="Console"/>-->
+<!--        </Root>-->
     </Loggers>
 </Configuration>

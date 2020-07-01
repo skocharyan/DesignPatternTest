@@ -1,31 +1,33 @@
 package org.example.Pages;
 
-import lombok.Singular;
 import org.example.Properties.MyProperties;
 import org.example.factories.WebDriverFactory;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-public class HomePage  extends  BasePage{
-    //variables
+import java.util.List;
+
+public class HomePage extends BasePage {
+    private static String Url = MyProperties.start("URL.properties").getProperties("homePageUrl");
+    private static EventFiringWebDriver eventFiringWebDriver;
+
+    @FindBy(xpath = "//div[@class='inventory_item']")
+    private List<WebElement> productCollection;
 
 
-    @FindBy(xpath = "")
-    private WebElement SignInButton;
-
-    private HomePage(EventFiringWebDriver webDriver){
+    private HomePage(EventFiringWebDriver webDriver) {
         super(webDriver);
-
     }
+
+    public HomePage open() {
+        eventFiringWebDriver.get(Url);
+        return this;
+    }
+
     public static HomePage start(String browserName) {
-        EventFiringWebDriver eventFiringWebDriver =
-                WebDriverFactory.start("chrome").generateWebDriver().getDriver();
-        eventFiringWebDriver.get(MyProperties.start("URL.propersssties").getProperties("homePageUrl"));
+        eventFiringWebDriver = WebDriverFactory.start(browserName).generateWebDriver().getDriver();
         return new HomePage(eventFiringWebDriver);
     }
-
 
 }
