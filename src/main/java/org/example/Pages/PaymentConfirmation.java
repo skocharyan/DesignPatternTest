@@ -8,43 +8,42 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.List;
 
-public class CartPage extends BasePage {
-
-    private static String Url = MyProperties.start("URL.properties").getProperties("cartPageUrl");
+public class PaymentConfirmation extends  BasePage {
+    private static String Url = MyProperties.start("URL.properties").getProperties("checkOutUrl");
     private static EventFiringWebDriver eventFiringWebDriver;
-
     @FindBy(xpath = "//div[@class='cart_item']")
     private List<WebElement> productCollection;
 
-    @FindBy(xpath = "//a[@class='btn_secondary']")
-    private WebElement continueShopping;
+    @FindBy(xpath = "//a[@class='cart_cancel_link btn_secondary']")
+    private WebElement cancel;
 
-    @FindBy(xpath = "//a[@class='btn_action checkout_button']")
-    private WebElement checkOut;
+    @FindBy(xpath = "//a[@class='btn_action cart_button']")
+    private WebElement finish;
 
     @FindBy(xpath = "//a[@class='shopping_cart_link fa-layers fa-fw']")
     private WebElement chart;
 
-    private CartPage(EventFiringWebDriver webDriver) {
+    private PaymentConfirmation(EventFiringWebDriver webDriver) {
         super(webDriver);
     }
 
-    public CartPage open() {
+    public PaymentConfirmation open() {
         eventFiringWebDriver.get(Url);
         return this;
     }
 
-    public static CartPage start(String browserName) {
+    public static PaymentConfirmation start(String browserName) {
         eventFiringWebDriver = WebDriverFactory.start(browserName).generateWebDriver().getDriver();
-        return new CartPage(eventFiringWebDriver);
+        return new PaymentConfirmation(eventFiringWebDriver);
     }
 
-    public CartPage clickContinueShopping(){
-        continueShopping.click();
+    public PaymentConfirmation clickContinueShopping(){
+        cancel.click();
         return this;
     }
-    public CartPage clickCheckOut(){
-        checkOut.click();
+    public PaymentConfirmation clickCheckOut(){
+        finish.click();
         return this;
     }
+
 }
