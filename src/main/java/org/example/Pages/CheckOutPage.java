@@ -8,9 +8,9 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.List;
 
-public class CartPage extends BasePage {
+public class CheckOutPage extends BasePage {
 
-    private static String Url = MyProperties.start("URL.properties").getProperties("cartPageUrl");
+    private static String Url = MyProperties.start("URL.properties").getProperties("checkOutUrl");
     private static EventFiringWebDriver eventFiringWebDriver;
     @FindBy(xpath = "//div[@class='https://www.saucedemo.com/cart.html']")
     private List<WebElement> productCollection;
@@ -24,25 +24,25 @@ public class CartPage extends BasePage {
     @FindBy(xpath = "//a[@class='shopping_cart_link fa-layers fa-fw']")
     private WebElement chart;
 
-    private CartPage(EventFiringWebDriver webDriver) {
+    private CheckOutPage(EventFiringWebDriver webDriver) {
         super(webDriver);
     }
 
-    public CartPage open() {
+    public CheckOutPage open() {
         eventFiringWebDriver.get(Url);
         return this;
     }
 
-    public static CartPage start(String browserName) {
+    public static CheckOutPage start(String browserName) {
         eventFiringWebDriver = WebDriverFactory.start(browserName).generateWebDriver().getDriver();
-        return new CartPage(eventFiringWebDriver);
+        return new CheckOutPage(eventFiringWebDriver);
     }
 
-    public CartPage clickContinueShopping(){
+    public CheckOutPage clickContinueShopping(){
         continueShopping.click();
         return this;
     }
-    public CartPage clickCheckOut(){
+    public CheckOutPage clickCheckOut(){
         checkOut.click();
         return this;
     }
