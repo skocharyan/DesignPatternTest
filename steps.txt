@@ -1,0 +1,6 @@
+ ItemsSelectingFacade
+        login
+            with random login and password
+        empty  cart
+        add  random number of items to cart
+        validate  items quantity in chart
