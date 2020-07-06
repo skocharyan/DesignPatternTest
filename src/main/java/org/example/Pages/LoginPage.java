@@ -1,6 +1,8 @@
 package org.example.Pages;
 
 import org.example.Properties.MyProperties;
+import org.example.driverBank.WebDriverBank;
+import org.example.exception.PageValidationException;
 import org.example.factories.WebDriverFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,13 +23,20 @@ public class LoginPage extends  BasePage{
     private LoginPage(EventFiringWebDriver webDriver){
         super(webDriver);
     }
+
     public static LoginPage start(String browserName) {
         eventFiringWebDriver = WebDriverFactory.start(browserName).generateWebDriver().getDriver();
+        WebDriverBank.setEventFiringWebDriver(eventFiringWebDriver);
         return new LoginPage(eventFiringWebDriver);
     }
 
     public LoginPage open(){
         eventFiringWebDriver.get(Url);
+        setWindowSize();
+        return this;
+    }
+    public LoginPage setUp(){
+
         return this;
     }
 
@@ -44,6 +53,10 @@ public class LoginPage extends  BasePage{
         submit.click();
         return this;
     }
+    public LoginPage close(){
+        driver.quit();
+        return this;
+    }
 
     public LoginPage execute(String userName , String password ){
         fillUserNameField(userName);
@@ -51,11 +64,10 @@ public class LoginPage extends  BasePage{
         submit();
         return this;
     }
-    public Boolean validate(){
-        if(driver.getCurrentUrl() == Url){
-            return  true;
-        }else {
-            return false;
+    public LoginPage validate(String url) throws PageValidationException {
+        if(!driver.getCurrentUrl().equals(url)){
+            throw  new PageValidationException(eventFiringWebDriver.getCurrentUrl() + " validation exception") ;
         }
+        return this;
     }
 }

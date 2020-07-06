@@ -1,13 +1,11 @@
 package org.example;
 
-import org.example.Pages.LoginPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+import java.io.IOException;
 
 public class app {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        String path = MyProperties.start().getProperties("chromeDriver");
 //        System.setProperty("webdriver.chrome.driver", path);
 //        MutableCapabilities options = new ChromeOptions();
@@ -23,7 +21,7 @@ public class app {
 ////
 //        WebElement element = driver.findElement(By.xpath("//input[@class='cba3 cba4 cba2']"));
 //        element.findElement()
-//        driver.findElement(By.xpath("//input[@class='cba3 cba4 cba2'][1]")).sendKeys("SKA30585850");
-
+//        driver.findElement(By.xpath("//input[@class='cba3 cba4 cba2'][1]")).sendKeys("SKA30585850")
+//        Assert.assertTrue(false);
     }
 }

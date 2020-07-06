@@ -2,6 +2,7 @@ package org.example.Pages;
 
 import org.example.Properties.MyProperties;
 import org.example.factories.WebDriverFactory;
+import org.example.webElements.Cart;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -20,8 +21,7 @@ public class PaymentConfirmation extends  BasePage {
     @FindBy(xpath = "//a[@class='btn_action cart_button']")
     private WebElement finish;
 
-    @FindBy(xpath = "//a[@class='shopping_cart_link fa-layers fa-fw']")
-    private WebElement chart;
+    private Cart chart = Cart.start(eventFiringWebDriver);
 
     private PaymentConfirmation(EventFiringWebDriver webDriver) {
         super(webDriver);

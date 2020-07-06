@@ -4,3 +4,7 @@
         empty  cart
         add  random number of items to cart
         validate  items quantity in chart
+
+///////  Items class modification  plan
+         generate List<WebElements>
+         pass WEbElement as argument

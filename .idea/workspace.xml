@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4727200f-9bfa-4e7a-b9f0-b5977a2f9f86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pages/PaymentConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pages/PaymentConfirmation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/webElements/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/webElements/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logins.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/password.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/password.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/webElements/Items.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -43,9 +52,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Educational projects/Log4JTest" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/Lenovo/Desktop/D_Facade_pattern_test/testng.xml">
     <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.app" />
       <module name="D_Facade_pattern_test" />
@@ -59,9 +68,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/Lenovo/Desktop/D_Facade_pattern_test/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="D_Facade_pattern_test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginAndAddTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="D_Facade_pattern_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.LoginAndAddTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Lenovo/Desktop/D_Facade_pattern_test/testng.xml" />
         <item itemvalue="Application.app" />
+        <item itemvalue="TestNG.LoginAndAddTest" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +126,13 @@
       <workItem from="1593550164087" duration="241000" />
       <workItem from="1593595538329" duration="3431000" />
       <workItem from="1593600532166" duration="7536000" />
-      <workItem from="1593679112552" duration="5858000" />
+      <workItem from="1593679112552" duration="8504000" />
+      <workItem from="1593715194265" duration="250000" />
+      <workItem from="1593715460790" duration="113000" />
+      <workItem from="1593715593897" duration="4975000" />
+      <workItem from="1593755286252" duration="4253000" />
+      <workItem from="1594019434904" duration="3321000" />
+      <workItem from="1594024282494" duration="16783000" />
     </task>
     <servers />
   </component>
@@ -96,18 +140,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#Notifications" timestamp="1593461080173">
+    <state x="275" y="22" key="#Notifications" timestamp="1593715477274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1593461080173" />
+    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1593715477274" />
     <state x="454" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593459748226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="454" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1593459748226" />
-    <state x="488" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1593598635616">
+    <state x="488" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1594063313939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1593598635616" />
+    <state x="488" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594063313939" />
     <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593550296144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -116,6 +160,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1593548315463" />
+    <state x="479" y="249" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593717067334">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="249" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1593717067334" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593598835339">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -132,48 +180,41 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="505" y="280" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1593460959802" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1593598835558">
+    <state width="1302" height="176" key="GridCell.Tab.0.bottom" timestamp="1594064624943">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593598835558" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1593598835558">
+    <state width="1302" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594064624943" />
+    <state width="1302" height="176" key="GridCell.Tab.0.center" timestamp="1594064624943">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593598835558" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1593598835558">
+    <state width="1302" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594064624943" />
+    <state width="1302" height="176" key="GridCell.Tab.0.left" timestamp="1594064624943">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593598835558" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1593598835558">
+    <state width="1302" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594064624943" />
+    <state width="1302" height="176" key="GridCell.Tab.0.right" timestamp="1594064624943">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593598835558" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1593548260876">
+    <state width="1302" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594064624943" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1594024269512">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593548260876" />
-    <state x="378" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1593679112253">
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594024269512" />
+    <state x="378" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1594024283891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="225" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593679112253" />
-    <state x="339" y="164" key="run.anything.popup" timestamp="1593679367216">
+    <state x="378" y="225" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594024283891" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1594027732704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1593679367216" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1593605182335">
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1594027732704" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594027243139">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593605182335" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Pages/LoginPage.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594027243139" />
+    <state x="397" y="279" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1593719908044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="397" y="279" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1593719908044" />
   </component>
 </project>

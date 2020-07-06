@@ -2,6 +2,8 @@ package org.example.Pages;
 
 import org.example.Properties.MyProperties;
 import org.example.factories.WebDriverFactory;
+import org.example.webElements.Cart;
+import org.example.webElements.Items;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -13,8 +15,7 @@ public class CartPage extends BasePage {
     private static String Url = MyProperties.start("URL.properties").getProperties("cartPageUrl");
     private static EventFiringWebDriver eventFiringWebDriver;
 
-    @FindBy(xpath = "//div[@class='cart_item']")
-    private List<WebElement> productCollection;
+    private List<WebElement> productCollection = Items.start(eventFiringWebDriver).getItems();
 
     @FindBy(xpath = "//a[@class='btn_secondary']")
     private WebElement continueShopping;
@@ -39,12 +40,22 @@ public class CartPage extends BasePage {
         return new CartPage(eventFiringWebDriver);
     }
 
-    public CartPage clickContinueShopping(){
+    public CartPage clickContinueShopping() {
         continueShopping.click();
         return this;
     }
-    public CartPage clickCheckOut(){
+
+    public CartPage clickCheckOut() {
         checkOut.click();
         return this;
+    }
+
+    public boolean validate() {
+        if (MyProperties.start("URL.properties").getProperties("cartPageUrl").
+                equals(eventFiringWebDriver.getCurrentUrl())) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

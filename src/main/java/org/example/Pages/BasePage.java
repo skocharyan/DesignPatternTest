@@ -1,5 +1,6 @@
 package org.example.Pages;
 
+import org.example.exception.PageValidationException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,7 +22,9 @@ public class BasePage {
         wait = new WebDriverWait(driver, TIMEOUT, POLLING);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, TIMEOUT), this);
     }
-
+    protected void setWindowSize( ){
+        driver.manage().window().maximize();
+    }
 
     protected void waitForElementToAppear(WebElement element ) {
         wait.until(ExpectedConditions.visibilityOf(element));
