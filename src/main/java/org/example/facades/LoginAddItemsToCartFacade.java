@@ -9,6 +9,7 @@ public class LoginAddItemsToCartFacade {
      private static String browserName = null;
      private static String login = null ;
      private  LoginPage loginPage ;
+     private HomePage homePage;
     private LoginAddItemsToCartFacade(){
 
     }
@@ -44,11 +45,11 @@ public class LoginAddItemsToCartFacade {
         return this;
     }
     public LoginAddItemsToCartFacade addRandomNumberOfItemTOCart(){
-        HomePage.cont().selectMultipleItems().validateNumberOfItemInCart();
+       homePage =  HomePage.cont().selectMultipleItems().validateNumberOfItemInCart();
         return this;
     }
     public LoginAddItemsToCartFacade deleteMultiItems(){
-        HomePage.cont().deleteRandomSelectedItems();
+        homePage.deleteRandomSelectedItems();
         return this;
     }
 }
