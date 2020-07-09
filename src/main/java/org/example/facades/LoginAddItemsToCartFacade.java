@@ -44,11 +44,11 @@ public class LoginAddItemsToCartFacade {
         return this;
     }
     public LoginAddItemsToCartFacade addRandomNumberOfItemTOCart(){
-        HomePage.cont().selectMultipleItems();
+        HomePage.cont().selectMultipleItems().validateNumberOfItemInCart();
         return this;
     }
     public LoginAddItemsToCartFacade deleteMultiItems(){
+        HomePage.cont().deleteRandomSelectedItems();
         return this;
     }
-
 }

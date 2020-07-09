@@ -17,6 +17,8 @@ public class Items {
 
     private By itemButton = By.xpath(".//button[@class='btn_primary btn_inventory']");
 
+    private By selectedButton = By.xpath(".//button[@class='btn_secondary btn_inventory']");
+
     @FindBy(xpath = "//div[@class='inventory_item']")
     private List<WebElement> item;
 
@@ -36,8 +38,13 @@ public class Items {
         return element.findElement(itemPrice).getText();
     }
 
-    private String getItemStatus(WebElement element) {
-        return element.findElement(itemButton).getText();
+    public Boolean getItemStatus(WebElement element) {
+        if(element.getText().contains("REMOVE")){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public List<WebElement> getItems() {
@@ -46,5 +53,8 @@ public class Items {
 
     public void addItemToCart(WebElement webElement) {
         webElement.findElement(itemButton).click();
+    }
+    public void deleteItemFromCart(WebElement webElement) {
+        webElement.findElement(selectedButton).click();
     }
 }

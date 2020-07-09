@@ -13,12 +13,12 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="org.example.Properties.MyProperties" level="error" additivity="false">
-            <AppenderRef ref="Console"/>
-        </Logger>
-        <!--        <Root level="trace" additivity = "true">-->
-        <!--            <AppenderRef ref="File"/>-->
-        <!--            <AppenderRef ref="Console"/>-->
-        <!--        </Root>-->
+<!--        <Logger name="org.example.Properties.MyProperties" level="error" additivity="false">-->
+<!--            <AppenderRef ref="Console"/>-->
+<!--        </Logger>-->
+                <Root level="trace" additivity = "true">
+                    <AppenderRef ref="File"/>
+                    <AppenderRef ref="Console"/>
+                </Root>
     </Loggers>
 </Configuration>
