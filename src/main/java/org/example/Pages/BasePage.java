@@ -1,5 +1,7 @@
 package org.example.Pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.example.exception.PageValidationException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +18,7 @@ public class BasePage {
     private static final int POLLING = 100;
     protected EventFiringWebDriver driver;
     private WebDriverWait wait;
-
+    protected  Logger logger = LogManager.getLogger(BasePage.class);
     public BasePage(EventFiringWebDriver driver ) {
         this.driver = driver;
         wait = new WebDriverWait(driver, TIMEOUT, POLLING);

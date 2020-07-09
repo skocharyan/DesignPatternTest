@@ -4,7 +4,6 @@ import org.example.Pages.HomePage;
 import org.example.Pages.LoginPage;
 import org.example.Properties.MyProperties;
 import org.example.exception.PageValidationException;
-import org.example.webElements.Items;
 
 public class LoginAddItemsToCartFacade {
      private static String browserName = null;
@@ -46,6 +45,9 @@ public class LoginAddItemsToCartFacade {
     }
     public LoginAddItemsToCartFacade addRandomNumberOfItemTOCart(){
         HomePage.cont().selectMultipleItems();
+        return this;
+    }
+    public LoginAddItemsToCartFacade deleteMultiItems(){
         return this;
     }
 

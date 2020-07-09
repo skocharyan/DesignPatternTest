@@ -18,11 +18,9 @@ public class LoginAndAddTest {
         this.browserName = browserName;
         loginAddItemsToCartFacade = LoginAddItemsToCartFacade.start().setBrowserName(browserName).setLogin(login)
                 .login()
-                .validate();
-    }
-    @Test(dependsOnMethods = "loginAndChoseItems" )
-    public void addRandomMultiItems(){
-        loginAddItemsToCartFacade.addRandomNumberOfItemTOCart();
+                .validate()
+                .addRandomNumberOfItemTOCart()
+                .deleteMultiItems();
     }
 
     @AfterTest
