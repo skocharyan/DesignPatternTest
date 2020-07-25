@@ -49,7 +49,7 @@ public class LoginAddItemsToCartFacade {
         return this;
     }
     public LoginAddItemsToCartFacade deleteMultiItems(){
-        homePage.deleteRandomSelectedItems();
+        homePage.deleteRandomSelectedItems().closePage();
         return this;
     }
 }

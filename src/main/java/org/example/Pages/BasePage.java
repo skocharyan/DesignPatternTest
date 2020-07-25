@@ -39,4 +39,8 @@ public class BasePage {
     protected void waitForTextToDisappear(WebElement element , String text) {
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe((By) element , text)));
     }
+
+    public void closePage() {
+        driver.close();
+    }
 }

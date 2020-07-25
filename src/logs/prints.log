@@ -2,3 +2,9 @@
 21:19:37.120 [main] DEBUG org.example.Pages.BasePage - deleting 4 item from cart
 22:38:24.024 [main] DEBUG org.example.Pages.BasePage - adding 5 item to cart
 22:38:24.773 [main] DEBUG org.example.Pages.BasePage - deleting 5 item from cart
+22:48:46.675 [main] DEBUG org.example.Pages.BasePage - adding 3 item to cart
+22:48:47.147 [main] DEBUG org.example.Pages.BasePage - deleting 3 item from cart
+18:46:19.047 [main] DEBUG org.example.Pages.BasePage - adding 1 item to cart
+18:46:19.235 [main] DEBUG org.example.Pages.BasePage - deleting 1 item from cart
+18:48:33.915 [main] DEBUG org.example.Pages.BasePage - adding 5 item to cart
+18:48:34.577 [main] DEBUG org.example.Pages.BasePage - deleting 5 item from cart
